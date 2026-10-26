@@ -1,0 +1,333 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+:root {
+
+  font-family: Arial, sans-serif;
+
+  color: #25243a;
+
+  background: #ffffff;
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+
+}
+
+body {
+
+  margin: 0;
+
+  min-width: 320px;
+
+}
+
+a {
+
+  text-decoration: none;
+
+  color: inherit;
+
+}
+
+button {
+
+  font: inherit;
+
+  cursor: pointer;
+
+}
+
+.entete {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding: 20px 7%;
+
+  border-bottom: 1px solid #eeeeF4;
+
+}
+
+.entete h1 {
+
+  color: #6c4ce6;
+
+  font-size: 25px;
+
+  margin: 0;
+
+}
+
+.entete nav {
+
+  display: flex;
+
+  gap: 25px;
+
+}
+
+.entete nav a {
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+.entete nav a:hover {
+
+  color: #6c4ce6;
+
+}
+
+.bouton-panier,
+
+.carte button {
+
+  border: 0;
+
+  border-radius: 10px;
+
+  padding: 12px 17px;
+
+  background: #f0ecff;
+
+  color: #5b3bc4;
+
+  font-weight: 700;
+
+}
+
+.banniere {
+
+  margin: 35px 5%;
+
+  padding: 65px 8%;
+
+  border-radius: 25px;
+
+  background: linear-gradient(120deg, #f0eaff, #fff0f5);
+
+}
+
+.surtitre {
+
+  color: #6c4ce6;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+}
+
+.banniere h2 {
+
+  max-width: 650px;
+
+  margin: 18px 0;
+
+  font-size: clamp(30px, 5vw, 48px);
+
+  line-height: 1.15;
+
+}
+
+.banniere p:not(.surtitre) {
+
+  max-width: 520px;
+
+  line-height: 1.7;
+
+  color: #666477;
+
+}
+
+.bouton-principal {
+
+  display: inline-block;
+
+  margin-top: 18px;
+
+  padding: 15px 22px;
+
+  border-radius: 10px;
+
+  background: #6c4ce6;
+
+  color: white;
+
+  font-weight: 700;
+
+}
+
+.bouton-principal:hover {
+
+  background: #5334c6;
+
+}
+
+.section-boutiques {
+
+  padding: 25px 7% 65px;
+
+}
+
+.section-boutiques > h2 {
+
+  font-size: 30px;
+
+  margin-bottom: 8px;
+
+}
+
+.section-boutiques > p {
+
+  color: #777487;
+
+  margin-bottom: 30px;
+
+}
+
+.cartes-boutiques {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+}
+
+.carte {
+
+  padding: 25px;
+
+  border: 1px solid #eeeaf6;
+
+  border-radius: 18px;
+
+  box-shadow: 0 8px 25px #25243a0a;
+
+  transition: transform 0.2s;
+
+}
+
+.carte:hover {
+
+  transform: translateY(-4px);
+
+}
+
+.icone-boutique {
+
+  display: grid;
+
+  place-items: center;
+
+  width: 65px;
+
+  height: 65px;
+
+  border-radius: 16px;
+
+  background: #f4efff;
+
+  font-size: 32px;
+
+}
+
+.carte h3 {
+
+  margin: 20px 0 10px;
+
+}
+
+.carte p {
+
+  color: #777487;
+
+  line-height: 1.6;
+
+}
+
+.carte button {
+
+  margin-top: 10px;
+
+}
+
+.pied-page {
+
+  padding: 25px 7%;
+
+  text-align: center;
+
+  background: #25243a;
+
+  color: white;
+
+  font-size: 13px;
+
+}
+
+@media (max-width: 700px) {
+
+  .entete {
+
+    flex-wrap: wrap;
+
+    padding: 18px 5%;
+
+  }
+
+  .entete nav {
+
+    order: 3;
+
+    width: 100%;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+  }
+
+  .entete nav a {
+
+    font-size: 13px;
+
+  }
+
+  .banniere {
+
+    margin: 20px 4%;
+
+    padding: 38px 24px;
+
+  }
+
+  .cartes-boutiques {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .section-boutiques {
+
+    padding: 20px 5% 45px;
+
+  }
+
+}
