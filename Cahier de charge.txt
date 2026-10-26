@@ -1,0 +1,64 @@
+PLATEFORME DE COMMERCE ELECTRONIQUE MULTI-BOUTIQUE
+
+ 1. PRESENTATION DU PROJET
+
+    Développer une application web permettant à plusieurs commerçants de créer et gérer leur boutique en ligne, de publier leurs produits, de recevoir des commandes, de suivre leurs stocks et d’organiser les paiements.
+
+ 2. OBJECTIF GENERALE
+
+    Simplifier la vente en ligne et aider les commerçants à mieux organiser leurs activités commerciales.
+
+ 3. UTILISATERURS DU SYSTEMES
+
+   -Les commerçants : créent et gèrent leurs boutiques.
+
+   -Les clients : consultent les produits et passent des commandes.
+
+   -L’administrateur de la plateforme : supervise les boutiques, les comptes et le bon fonctionnement du système.
+
+ 4. FONCTIONALITER PRINCIPALES
+
+   -Inscription et connexion des commerçants.
+
+   -Création et personnalisation d’une boutique.
+
+   -Ajout, modification et suppression de produits.
+
+   -Gestion des prix et des quantités en stock.
+
+   -Panier et enregistrement des commandes.
+
+   -Suivi du statut des commandes.
+
+   -Option pour contacter le commerçant via WhatsApp.
+
+   -Gestion des paiements et confirmation des transactions.
+
+   -Tableau de bord pour suivre l’activité de la boutique.
+
+ 5. CONTRAINTES
+
+   -L’application doit fonctionner sur ordinateur et téléphone.
+
+   -Les données des boutiques doivent être séparées et protégées.
+
+   -Les montants doivent pouvoir être exprimés en FCFA.
+
+   -Les paiements doivent être traités par un service adapté et sécurisé.
+
+ 6. ORGANISATION DU DEVELOPPEMENT
+
+   -Phase 1 — Cahier des charges
+    Définir les besoins, les utilisateurs et les règles de fonctionnement.
+
+   -Phase 2 — Conception
+    Dessiner les pages, réaliser les diagrammes UML utiles et concevoir la base de données.
+
+   -Phase 3 — Développement
+    Créer les interfaces, les comptes commerçants, les produits et le système de commandes.
+
+   -Phase 4 — Paiements
+    Intégrer un moyen de paiement adapté, puis tester les confirmations de transaction.
+
+   -Phase 5 — Tests et mise en ligne
+    Vérifier la sécurité, tester les commandes et publier l’application.
