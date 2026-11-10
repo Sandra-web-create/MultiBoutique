@@ -1,0 +1,6 @@
+{
+  "name": "MultiBoutiques Cameroun",
+  "description": "Place de marché multi-vendeurs de référence au Cameroun. Découvrez les meilleures boutiques de Douala, Yaoundé, Bafoussam et Garoua avec paiement MTN MoMo, Orange Money et livraison rapide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
