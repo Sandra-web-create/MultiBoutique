@@ -1,0 +1,311 @@
+import { Boutique, Product, CameroonCity } from '../types';
+
+export const CITIES: CameroonCity[] = [
+  'Toutes les villes',
+  'Douala',
+  'Yaoundé',
+  'Bafoussam',
+  'Garoua',
+  'Kribi',
+  'Bamenda'
+];
+
+export const HERO_IMAGE = '/src/assets/images/hero_marketplace_cameroon_1793400109381.jpg';
+
+export const BOUTIQUES: Boutique[] = [
+  {
+    id: 'b-tech-douala',
+    name: 'Douala Tech Hub',
+    city: 'Douala',
+    quarter: 'Akwa - Boulevard de la Liberté',
+    rating: 4.9,
+    reviewsCount: 184,
+    category: 'High-Tech & Smartphones',
+    description: 'Boutique certifiée spécialisée dans les équipements électroniques authentiques, smartphones scellés, smartwatches et accessoires avec garantie constructeur.',
+    verified: true,
+    deliveryTime: 'Livraison en 2h à Douala · 24h à Yaoundé',
+    badge: 'Commerçant Vérifié RCCM',
+    avatarUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=200&q=80',
+    phone: '+237699123456'
+  },
+  {
+    id: 'b-wax-yaounde',
+    name: 'K-Wax Studio Yaoundé',
+    city: 'Yaoundé',
+    quarter: 'Bastos - En face Ambassade',
+    rating: 4.8,
+    reviewsCount: 126,
+    category: 'Mode & Wax Camerounais',
+    description: 'Atelier de haute couture contemporaine africaine. Créations exclusives en tissu Ndop de l’Ouest et imprimés wax haut de gamme avec finitions soignées.',
+    verified: true,
+    deliveryTime: 'Livraison 24h Yaoundé · 48h Douala',
+    badge: 'Maître Artisan Créateur',
+    avatarUrl: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=200&q=80',
+    phone: '+237677891234'
+  },
+  {
+    id: 'b-terroir-ouest',
+    name: 'Saveurs du Mungo & Terroir',
+    city: 'Bafoussam',
+    quarter: 'Centre Commercial Marché A',
+    rating: 5.0,
+    reviewsCount: 215,
+    category: 'Terroir & Épicerie Fine',
+    description: 'Sélection des plus nobles trésors agricoles du Cameroun : Café Arabica pur du Mont Oku, Poivre Blanc de Penja IGP médaillé, et miels sauvages des hauts plateaux.',
+    verified: true,
+    deliveryTime: 'Expédition express nationale sous 48h',
+    badge: 'Produits IGP & Terroir Certifié',
+    avatarUrl: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=200&q=80',
+    phone: '+237655443322'
+  },
+  {
+    id: 'b-cuir-garoua',
+    name: 'Nord Cuir & Artisanat',
+    city: 'Garoua',
+    quarter: 'Quartier Artisanal Djamboutou',
+    rating: 4.7,
+    reviewsCount: 78,
+    category: 'Mode & Wax Camerounais',
+    description: 'Maroquinerie d’art et travail traditionnel des cuirs tannés naturellement du Grand Nord Cameroun. Sacs, ceintures et babouches d’exception.',
+    verified: true,
+    deliveryTime: 'Expédition agence sous 48h à 72h',
+    badge: 'Artisanat du Grand Nord',
+    avatarUrl: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=200&q=80',
+    phone: '+237691556677'
+  },
+  {
+    id: 'b-deco-douala',
+    name: 'Maison d’Ébène & Déco',
+    city: 'Douala',
+    quarter: 'Bonapriso - Rue Narcisse',
+    rating: 4.9,
+    reviewsCount: 92,
+    category: 'Maison & Décoration',
+    description: 'Mobilier contemporain en bois précieux d’Afrique (ébène, iroko, bubinga) et luminaires artisanaux conçus par des designers locaux.',
+    verified: true,
+    deliveryTime: 'Livraison sur rendez-vous avec montage',
+    badge: 'Design Mobilier Durable',
+    avatarUrl: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=200&q=80',
+    phone: '+237690112233'
+  },
+  {
+    id: 'b-bio-yaounde',
+    name: 'AfroBio Botanicals',
+    city: 'Yaoundé',
+    quarter: 'Mendong - Montée Jouvence',
+    rating: 4.8,
+    reviewsCount: 110,
+    category: 'Beauté & Soins Bio',
+    description: 'Laboratoire artisanal de soins cosmétiques naturels formulés à base de beurre de karité non raffiné, huiles de baobab et kinkeliba.',
+    verified: true,
+    deliveryTime: 'Livraison 24h Yaoundé · Douala 24h',
+    badge: 'Ingrédients 100% Naturels',
+    avatarUrl: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=200&q=80',
+    phone: '+237672334455'
+  }
+];
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 'prod-wax-jacket',
+    title: 'Veste Tailleur Haute Couture Wax & Ndop',
+    category: 'Mode & Wax Camerounais',
+    price: 65000,
+    originalPrice: 80000,
+    boutiqueId: 'b-wax-yaounde',
+    boutiqueName: 'K-Wax Studio Yaoundé',
+    city: 'Yaoundé',
+    quarter: 'Bastos',
+    rating: 4.9,
+    reviewsCount: 38,
+    inStock: true,
+    stockCount: 6,
+    imageUrl: '/src/assets/images/product_wax_jacket_1793400109181.jpg',
+    description: 'Pièce signature alliant le tissage traditionnel royal Ndop de l’Ouest Cameroun et un wax de qualité premium. Coupe ajustée moderne doublée de soie respirante. Confectionnée minutieusement à Yaoundé.',
+    specifications: {
+      'Origine': 'Confectionné à Bastos, Yaoundé',
+      'Matériaux': '100% Coton Wax & Empiècements Ndop authentique',
+      'Doublure': 'Soie fine respirante anti-transpiration',
+      'Entretien': 'Nettoyage à sec recommandé',
+      'Tailles disponibles': 'M (40), L (42), XL (44)'
+    },
+    isNew: true,
+    isPopular: true
+  },
+  {
+    id: 'prod-smartwatch-titanium',
+    title: 'Smartwatch Titanium Pro (GPS + Assistant Santé)',
+    category: 'High-Tech & Smartphones',
+    price: 145000,
+    originalPrice: 170000,
+    boutiqueId: 'b-tech-douala',
+    boutiqueName: 'Douala Tech Hub',
+    city: 'Douala',
+    quarter: 'Akwa',
+    rating: 4.9,
+    reviewsCount: 52,
+    inStock: true,
+    stockCount: 11,
+    imageUrl: '/src/assets/images/product_douala_smartwatch_1793400109726.jpg',
+    description: 'Montre connectée haut de gamme avec boîtier en titane grade aérospatial et bracelet cuir surpiqué. Écran AMOLED ultra-lumineux sous le soleil équatorial, mesure ECG, suivi cardio 24/7 et étanchéité 50m.',
+    specifications: {
+      'Garantie': '12 mois pièces et main d’œuvre à Douala Akwa',
+      'Boîtier': 'Titane brossé & Verre saphir inrayable',
+      'Autonomie': 'Jusqu’à 5 jours en usage intensif',
+      'Compatibilité': 'Android & iOS (notifications WhatsApp & appels)',
+      'Étanchéité': '5 ATM (50 mètres)'
+    },
+    isNew: false,
+    isPopular: true
+  },
+  {
+    id: 'prod-coffee-oku',
+    title: 'Café Arabica Pur Mont Oku Grand Cru (500g)',
+    category: 'Terroir & Épicerie Fine',
+    price: 8500,
+    boutiqueId: 'b-terroir-ouest',
+    boutiqueName: 'Saveurs du Mungo & Terroir',
+    city: 'Bafoussam',
+    quarter: 'Marché A',
+    rating: 5.0,
+    reviewsCount: 84,
+    inStock: true,
+    stockCount: 45,
+    imageUrl: '/src/assets/images/product_cameroon_coffee_1793400109599.jpg',
+    description: 'Café d’altitude cultivé sur les versants volcaniques du Mont Oku (région du Nord-Ouest). Torréfaction artisanale moyenne révélant des notes subtiles de chocolat noir, noisette et agrumes doux.',
+    specifications: {
+      'Altitude': '2 100m - Terroir volcanique du Mont Oku',
+      'Variété': '100% Arabica Bourbon & Java',
+      'Mouture': 'Grains entiers (option moulu disponible sur demande)',
+      'Conditionnement': 'Paquet kraft étanche avec valve fraîcheur (500g)',
+      'Date de torréfaction': 'Fraîchement torréfié il y a moins de 15 jours'
+    },
+    isNew: false,
+    isPopular: true
+  },
+  {
+    id: 'prod-penja-pepper',
+    title: 'Poivre Blanc de Penja IGP Millésimé (Bocal 250g)',
+    category: 'Terroir & Épicerie Fine',
+    price: 12500,
+    originalPrice: 15000,
+    boutiqueId: 'b-terroir-ouest',
+    boutiqueName: 'Saveurs du Mungo & Terroir',
+    city: 'Bafoussam',
+    quarter: 'Marché A',
+    rating: 5.0,
+    reviewsCount: 112,
+    inStock: true,
+    stockCount: 30,
+    imageUrl: 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80',
+    description: 'Premier produit africain certifié Indication Géographique Protégée (IGP). Ce poivre blanc volcanique récolté à la main dans le département du Moungo offre un parfum musqué intense apprécié des plus grands chefs étoilés.',
+    specifications: {
+      'Certification': 'IGP Officielle (Indication Géographique Protégée)',
+      'Origine': 'Vallée de Penja, Région du Littoral',
+      'Format': 'Bocal verre hermétique 250g avec scellé d’authenticité',
+      'Usage': 'Idéal viandes blanches, poissons du Wouri, sauces crémées'
+    },
+    isNew: false,
+    isPopular: true
+  },
+  {
+    id: 'prod-leather-bag-garoua',
+    title: 'Sac Besace Cuir Pleine Fleur Tanné Artisanal',
+    category: 'Mode & Wax Camerounais',
+    price: 38000,
+    boutiqueId: 'b-cuir-garoua',
+    boutiqueName: 'Nord Cuir & Artisanat',
+    city: 'Garoua',
+    quarter: 'Djamboutou',
+    rating: 4.8,
+    reviewsCount: 29,
+    inStock: true,
+    stockCount: 8,
+    imageUrl: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80',
+    description: 'Sac messager unisexe en cuir de zébu sélectionné et tanné aux écorces végétales selon la méthode séculaire de Garoua. Robuste, spacieux pour ordinateur portable 14" et documents.',
+    specifications: {
+      'Cuir': 'Cuir de zébu pleine fleur tannage végétal naturel',
+      'Compartiments': 'Poche principale zippée + 2 poches plaquées',
+      'Fermoirs': 'Boucles en laiton massif vieilli',
+      'Dimensions': '36 x 27 x 9 cm'
+    },
+    isNew: true,
+    isPopular: false
+  },
+  {
+    id: 'prod-anc-earbuds',
+    title: 'Écouteurs Sans Fil Pro Réduction Active du Bruit',
+    category: 'High-Tech & Smartphones',
+    price: 45000,
+    originalPrice: 55000,
+    boutiqueId: 'b-tech-douala',
+    boutiqueName: 'Douala Tech Hub',
+    city: 'Douala',
+    quarter: 'Akwa',
+    rating: 4.7,
+    reviewsCount: 67,
+    inStock: true,
+    stockCount: 14,
+    imageUrl: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80',
+    description: 'Son haute fidélité avec réduction active des bruits ambiants jusqu’à 35dB (idéal pour les transports urbains de Douala et Yaoundé). Microphones quadri-directionnels avec clarté vocale HD.',
+    specifications: {
+      'Garantie': '6 mois échange standard Douala Tech Hub',
+      'Autonomie': '8h d’écoute continue + 28h via le boîtier de charge',
+      'Charge rapide': '10 min de charge = 2h d’écoute',
+      'Connectivité': 'Bluetooth 5.3 à faible latence'
+    },
+    isNew: false,
+    isPopular: false
+  },
+  {
+    id: 'prod-argan-baobab-serum',
+    title: 'Sérum Précieux Huile de Baobab & Karité Sauvage (50ml)',
+    category: 'Beauté & Soins Bio',
+    price: 16000,
+    boutiqueId: 'b-bio-yaounde',
+    boutiqueName: 'AfroBio Botanicals',
+    city: 'Yaoundé',
+    quarter: 'Mendong',
+    rating: 4.9,
+    reviewsCount: 44,
+    inStock: true,
+    stockCount: 19,
+    imageUrl: 'https://images.unsplash.com/photo-1608248597359-00918c89b4f0?auto=format&fit=crop&w=600&q=80',
+    description: 'Élixir nourrissant pressé à froid à partir de graines de baobab sauvage et enrichi aux acides gras essentiels. Répare la barrière cutanée, apaise la peau et illumine le teint naturellement sans effet gras.',
+    specifications: {
+      'Composition': '100% Ingrédients d’origine végétale camerounaise',
+      'Extraction': 'Première pression à froid mécanique',
+      'Sans conservateurs': 'Sans parabènes, sans parfum de synthèse',
+      'Flacon': 'Verre ambré anti-UV avec pipette compte-gouttes'
+    },
+    isNew: false,
+    isPopular: true
+  },
+  {
+    id: 'prod-ebene-coffee-table',
+    title: 'Table Basse Sculptée en Bois d’Ébène & Iroko Massif',
+    category: 'Maison & Décoration',
+    price: 210000,
+    originalPrice: 240000,
+    boutiqueId: 'b-deco-douala',
+    boutiqueName: 'Maison d’Ébène & Déco',
+    city: 'Douala',
+    quarter: 'Bonapriso',
+    rating: 4.9,
+    reviewsCount: 15,
+    inStock: true,
+    stockCount: 3,
+    imageUrl: 'https://images.unsplash.com/photo-1533090161767-e6ffed986b88?auto=format&fit=crop&w=600&q=80',
+    description: 'Œuvre de mobilier sculptural sculptée par les maîtres ébénistes de Bonapriso. Piétement géométrique inspiré des masques Bamoun et plateau poli au grain fin traité contre l’humidité tropicale.',
+    specifications: {
+      'Bois': 'Ébène noble et Iroko certifié exploitation responsable',
+      'Traitement': 'Cire végétale hydrofuge spéciale climat tropical',
+      'Dimensions': 'Diamètre 85 cm, Hauteur 42 cm',
+      'Livraison': 'Livraison sécurisée avec portage à domicile'
+    },
+    isNew: true,
+    isPopular: false
+  }
+];
+
+export const INITIAL_ORDER: Product = PRODUCTS[0];
